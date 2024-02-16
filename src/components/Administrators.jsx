@@ -4,12 +4,11 @@ import { useDispatch , useSelector} from "react-redux"
 import {getHomePageData} from "../services/operations/homeAPI"
 import Card from './Card';
 
+
+// ADMIN Member functional component which represents admin team data
 const Administrators = () => {
 
-  
-
   const dispatch = useDispatch();
-  //dispatch(getHomePageData())
 
   useEffect(() => {
     dispatch(getHomePageData())

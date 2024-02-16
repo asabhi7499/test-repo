@@ -3,21 +3,14 @@ import Card from './Card';
 import { useDispatch , useSelector} from "react-redux"
 import {getHomePageData} from "../services/operations/homeAPI"
 
+
+// Team Member functional component which represents Members data
 const Members = () => {
-
-  // const dispatch = useDispatch();
-  // //dispatch(getHomePageData())
-
-  // useEffect(() => {
-  //   dispatch(getHomePageData())
-  // },[dispatch])
 
 
   const { teamData } = useSelector((state) => state.home);
-  console.log("meri team", teamData)
-  //console.log("meri team", team.typeOf)
+  console.log("meri team", teamData);
   
-
   const memberTeam = Object.values(teamData || {}).filter((member) => member.role === 'member');
 
   return (

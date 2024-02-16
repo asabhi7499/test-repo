@@ -2,14 +2,17 @@ import e from 'cors';
 import React, { useState } from 'react';
 import { FiSearch } from "react-icons/fi";
 
+// Header functional component to display header of the page 
 const Header = () => {
 
 
-  const [search, setSearch] = useState(true)
-  const [searchText, setSearchText] = useState("")
+  const [search, setSearch] = useState(true);
+
+  // Search text for search functionality not functional
+  const [searchText, setSearchText] = useState("");
 
   const searchTeamMember = (event) => {
-      setSearchText(event.target.value)
+      setSearchText(event.target.value);
   }
 
   return (

@@ -6,22 +6,25 @@ import { CiCirclePlus } from "react-icons/ci";
 
 const Home = () => {
 
-  const style = { fill: 'rgba(96 ,165 ,250 ,1)', fontSize: "1.5em" }
+  const style = { fill: 'rgba(96 ,165 ,250 ,1)', fontSize: "1.5em"}
 
   return (
     <div className='flex flex-col gap-4 font--italic relative z-0'>
-
+        
+        {/* Header component */}
         <Header/>
 
+        {/* Admin team data */}
         <Administrators/>
 
+        {/* Brder line betwwen two sections */}
         <div
-        className='w-[90%] h-[1px] bg-slate-200 mx-auto mt-5 '
+        className='w-[90%] h-[1px] bg-slate-200 mx-auto mt-5'/>
 
-        />
-
+        {/* Members data */}
         <Members/>
 
+        {/* Button to add new team members */}
         <CiCirclePlus className='fixed z-10 w-16 h-16 bottom-6 right-12 ' style={style}/>
 
       
